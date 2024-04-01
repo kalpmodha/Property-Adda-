@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Payment</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #subscriptionForm {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: rgba(73, 32, 32, 0.89);;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: rgba(72, 43, 43, 0.89);;
+        }
+
+        .payment-options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .payment-option {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .payment-option img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .paybtn a
+        {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="subscriptionForm">
+        <h2>Subscribe Now!</h2>
+
+        <form id="paymentForm" action="https://script.google.com/macros/s/AKfycbyMIOXCyaj_N2EN95SFH2CrMPBaEgHZjnjmr5hvr1j3gO3MIm6UpZJpbDFEKHtTuOkZ/exec" method="POST">
+            <label for="amount">Subscription Amount: $250 per year</label>
+            <input type="text" id="amount" name="amount" value="$250" disabled>
+        
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <input type="submit" value=" " class="paybtn"/>
+        </form>
+
+        <div class="payment-options">
+            <div class="payment-option">
+                <img src="visa.jpeg" alt="Visa Card"><input type="radio" name="radio1">
+                <p>Visa Card</p>
+            </div>
+            <div class="payment-option">
+                <img src="paytm.jpeg" alt="PayTM"><input type="radio" name="radio1">
+                <p>Paytm</p>
+            </div>
+            <div class="payment-option">
+                <img src="mastercard.png" alt="Credit cards"><input type="radio" name="radio1">
+                <p>Credit Cards</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+            // Implement payment processing logic here
+            // Ensure to handle different payment methods securely on the server-side
+            // For simplicity, we are not handling the actual payment processing in this example
+            // alert('Payment Successful! Welcome to our subscription service.');
+        });
+        
+    </script>
+</body>
+</html>

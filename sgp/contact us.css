@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.menu
+{
+    padding-top:15px;
+    
+}
+#login
+{
+    cursor: pointer;
+    padding-left: 40px;
+    margin-top: 7px;
+}
+.navbar li{
+    float: right;
+    list-style: none;
+}
+.navbar li a{
+    color: rgb(142, 131, 131);
+    padding: 3px 0px;
+    padding-left: 50px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+.navbar li a:hover
+{
+color:black
+}
+.nav2
+{
+    padding-top: 2px;
+    height: 70px;
+    padding-right: 60px;
+    background-color: rgba(73, 32, 32, 0.89);
+}
+#logo
+{
+ padding-left: 10px;
+
+
+}
+img{
+    border: 3px solid black;
+    margin-left: 5px;
+    margin-top: -8px;
+}
+a
+{
+    font-size: 25px;
+}
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background-color: rgb(203, 191, 177);
+    
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Container for the help content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table of Contents styles */
+.toc {
+    margin-bottom: 20px;
+}
+
+.toc h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc li {
+    margin: 5px 0;
+}
+
+/* Content section styles */
+.content {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}

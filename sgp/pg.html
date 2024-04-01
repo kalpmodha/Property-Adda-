@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pg</title>
+    <link href="web.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav2">
+
+     <nav class="navbar">
+        <div class="menu">
+        <ul>
+            <li><div id="login">
+                <a href="login.html">
+                <img src="user_icon.png" height="30px" width="30px" >
+                </a>
+            </div></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li><a href="homeloans.html">HomeLoans</a></li>
+            <li><a href="pg.html">PG/Co-living</a></li>
+            <li><a href="sell.html">Sell</a></li>
+            <li><a href="rent.html">Rent</a></li>
+            <li><a href="web.html">Buy</a></li>
+            
+            <div id="logo">
+                <img src="logo.png" alt="property adda" height="50px" width="160px">
+            </div>
+        </ul>
+    </div>
+     </nav>
+    </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a Room - Paying Guest / Co-living Portal</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(203, 191, 177);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        button {
+            background-color: rgba(73, 32, 32, 0.89);
+            color: rgb(142, 131, 131);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color:  rgba(94, 16, 16, 0.89);
+        }
+        form{
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <div class="container">
+        <h1>Paying Guest / Co-living</h1><br>
+        <form id="buyRoomForm">
+            <div class="form-group">
+                <label for="location">Preffered location</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="Priorities">Priorities</label>
+                <textarea id="Priorities" name="Priorities" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="roomPrice">Price ($)</label>
+                <input type="number" id="roomPrice" name="roomPrice" required>
+            </div>
+            <button type="submit"><a href="pg1.html">Submit</a></button>
+        </form>
+    </div>
+    <script>
+        // JavaScript code for handling form submission
+        const buyRoomForm = document.getElementById('buyRoomForm');
+
+        buyRoomForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // You can add code here to handle the form submission, including image upload and processing.
+
+            alert('Form submitted successfully!'); // Remove this line and add your logic for handling the form data.
+        });
+    </script>
+</body>
+</html>
+    </body>
+</html>
